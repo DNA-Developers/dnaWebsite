@@ -1,0 +1,37 @@
+<div id="container">
+  <div class="container">
+    <div id="left">
+      <a>
+      <img  routerLink="" id="logo" [src]='photo' alt="logo">
+    </a>
+    </div>
+    <div id="right">
+      <div *ngIf="hide(); else nav">
+        <a routerLink="">Home</a>
+        <a routerLink="about">About</a>
+        <a routerLink="contact">Contact</a>
+      </div>
+      <ng-template #nav>
+            <a *ngIf="show; else hideElem" (click)="toggle()">
+                <img id="menu" [src]='menu' alt="menu">
+            </a>
+            <ng-template #hideElem>
+              <a (click)="toggle()">
+                <img id="close" [src]='close' alt="close">
+                <div id="dropdown">
+                  <div id="items">
+                  <hr>
+                  <a routerLink="">Home</a>
+                  <hr>
+                  <a routerLink="about">About</a>
+                  <hr>
+                  <a routerLink="contact">Contact</a>
+                  <hr>
+                  </div>
+                </div>
+              </a>
+            </ng-template>
+      </ng-template>
+    </div>
+  </div>
+</div>
