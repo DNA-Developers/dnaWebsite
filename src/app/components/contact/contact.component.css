@@ -119,3 +119,14 @@ input::placeholder {
     padding-bottom: 2rem;
   }
 }
+@media(max-width: 768px) {
+  input {
+    width: 50vw;
+  }
+  textarea {
+    width:55vw;
+  }
+  #submitBut {
+    width: 50vw;
+  }
+}
