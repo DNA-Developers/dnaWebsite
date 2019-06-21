@@ -8,7 +8,7 @@
 }
 
 #container{
-    height: 60%;
+    height: 50%;
     width: 40%;
     background: #99cd00;
     border-radius: 10px;
@@ -16,7 +16,7 @@
 
 #content h3 {
     text-align: center;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 #but{
     display: flex;
@@ -30,4 +30,24 @@
 }
 button:hover {
     background: green !important;
+}
+@media(max-width: 790px) {
+    #container {
+       height: 50%;
+    }
+    #content h3 {
+        font-size: 1rem; 
+        margin-top: 45%;
+    }
+}
+
+@media(max-width: 768px) {
+     #container {
+         height: 35%;
+         width: 60%;
+     }
+    #content h3 {
+        font-size: .8rem;
+        margin-top: 30%;
+    }
 }
