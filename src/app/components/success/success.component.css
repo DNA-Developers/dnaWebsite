@@ -44,11 +44,11 @@ button:hover {
 @media(max-width: 768px) {
      #container {
          height: 35%;
-         width: 60%;
+         width: 65%;
      }
     #content h3 {
         font-size: 1rem;
-        margin-top: 30%;
+        margin-top: 27%;
     }
     #but {
         margin-top: 1.8rem; 
