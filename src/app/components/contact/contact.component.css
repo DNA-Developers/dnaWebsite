@@ -121,10 +121,10 @@ input::placeholder {
 }
 @media(max-width: 768px) {
   input {
-    width: 50vw;
+    width: 55vw;
   }
   textarea {
-    width:55vw;
+    width:60vw;
   }
   #submitBut {
     width: 50vw;
