@@ -88,6 +88,24 @@ input::placeholder {
   font-size: .8rem;
 }
 
+
+#loader{
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  display: block;
+  border-top: 1px solid #61D095;
+  border-right: 1px solid transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media(max-width: 855px) {
   #background {
     margin-top: 5rem;

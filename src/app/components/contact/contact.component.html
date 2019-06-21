@@ -37,7 +37,10 @@
             enter at least 5 characters</small>
         </div>
       </div>
-      <button mat-raised-button type="submit" id="submitBut" [disabled]="myForm.invalid" (click)="submit()">Submit</button>
+      <button mat-raised-button type="submit" id="submitBut" [disabled]="myForm.invalid" (click)="submit()">
+        <span *ngIf="loading === false"> Submit</span>
+        <span id="loader" *ngIf="loading === true"></span>
+      </button>
     </form>
   </mat-card>
 </div>

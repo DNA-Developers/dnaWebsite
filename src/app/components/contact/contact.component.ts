@@ -12,7 +12,8 @@ import { Router } from '@angular/router';
 })
 export class ContactComponent implements OnInit {
   myForm: FormGroup;
-  route = 'success'
+  route = 'success';
+  loading = false;
   
 
   constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) { }
@@ -32,6 +33,7 @@ export class ContactComponent implements OnInit {
   }
   
   submit(){
+    this.loading = true
     this.http.post('https://dna-email-sender.herokuapp.com/postData',{
       "name": this.myForm.get('name').value,
       "email": this.myForm.get('email').value,
@@ -41,7 +43,8 @@ export class ContactComponent implements OnInit {
       console.log('Data successfully sent ', data)
       this.route = 'success'
       setTimeout(() => {
-        this.router.navigate([this.route])
+        this.loading = false;
+        this.router.navigate([this.route]);
       }
       , 1000);
       
@@ -49,9 +52,10 @@ export class ContactComponent implements OnInit {
       console.log('Error ', error)
       this.route = 'error'
       setTimeout(() => {
+        this.loading = false;
         this.router.navigate([this.route])
       }
-      , 900);
+      , 1200);
     });
 
   }
