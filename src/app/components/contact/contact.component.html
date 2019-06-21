@@ -1,6 +1,6 @@
 <div id="container">
   <mat-card id="background">
-    <form name="contact" [formGroup]="myForm"  data-netlify-recaptcha="true" (ngSubmit)="onSubmit(myForm)">
+    <form name="contact" [formGroup]="myForm"  (ngSubmit)="onSubmit(myForm)">
       <div class="input">
         <label for="name">Full Name</label><br>
         <input type="text" name="name" id="name" placeholder=" John Doe" formControlName="name">
@@ -21,7 +21,7 @@
       </div>
       <div class="input">
         <label for="phone">Phone Number</label><br>
-        <input type="tel" name="phone" id="phone" placeholder=" (888)231-9023" formControlName="phone">
+        <input type="tel" name="phone" id="phone" placeholder=" (888) 231-9023" formControlName="phone">
         <div>
           <small class="error"
             *ngIf="(myForm.get('phone').touched || myForm.get('phone').dirty) && myForm.get('phone').errors?.required || myForm.get('phone').errors?.pattern || myForm.get('phone').errors?.minlength">Please
