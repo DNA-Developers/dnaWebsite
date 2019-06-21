@@ -1,0 +1,103 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+#container {
+  height: 55rem;
+  background: #006d95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#background {
+  margin-top: 5rem;
+  /* background: #A393BF; */
+  background: #61D095;
+  border-radius: 10px;
+  /* height: 75vh; */
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+input {
+  margin-top: 1rem;
+  height: 2.4rem;
+  width: 20rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  padding-left: .7rem;
+}
+
+::placeholder {
+  padding-right: 1rem;
+}
+
+textarea {
+  margin-top: 1rem;
+  height: 8rem;
+  width: 21rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding-left: .7rem;
+}
+
+.input label {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.input {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#submitBut {
+  margin-top: 1.3rem;
+  text-align: center;
+  height: 3rem;
+  width: 20rem;
+  background: #7E3F8F;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-left: .5rem;
+  border: none;
+  outline: none
+}
+
+#submitBut:hover {
+  background: #942911;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+@media(max-width: 855px) {
+  #background {
+    margin-top: 5rem;
+    /* background: #A393BF; */
+    background: #61D095;
+    border-radius: 10px;
+    /* height: 75vh; */
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,62 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#container{
+    height: 100vh;
+    background: url('../../../assets/architecture-blue-buildings-747101.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+a{
+    color: #ffffff;
+    background-color: #99cd00;
+    border-radius: 30px;
+    padding: 10px 21px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem !important;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #5B2A86;
+}
+
+@media(max-width: 880px){
+    .container{
+        text-align: center;
+    }
+    a{
+        font-size: .9rem;
+        padding: 10px 15px;
+    }
+    h1 {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+}

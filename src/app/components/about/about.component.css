@@ -1,0 +1,65 @@
+.showcase {
+    height: 40rem !important;
+}
+.showcase-top {
+    background-image: url('/assets/mountain.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+}
+.showcase-top h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 19rem;
+    font-size: 72px;
+    text-shadow: 2px 2px 5px blue;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icon {
+    font-size: 35px;
+    color: teal;
+}
+.text {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    color: #006e96;
+}
+.container {
+    width: 60rem;
+}
+.social {
+    padding-left: 30rem;
+    font-size: 35px;
+}
+.i {
+    margin-left: 1rem;
+}
+@media(max-width: 790px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+}
+    

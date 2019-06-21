@@ -1,0 +1,45 @@
+<div id="container">
+  <mat-card id="background">
+    <form name="contact" [formGroup]="myForm"  (ngSubmit)="onSubmit(myForm)">
+      <div class="input">
+        <label for="name">Full Name</label><br>
+        <input type="text" name="name" id="name" placeholder=" John Doe" formControlName="name">
+        <div>
+          <small class="error"
+            *ngIf="(myForm.get('name').touched || myForm.get('name').dirty) && myForm.get('name').errors?.required ||  myForm.get('name').errors?.minlength">Please
+            enter a name</small>
+        </div>
+      </div>
+      <div class="input">
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email" placeholder=" jdoe@gmail.com" formControlName="email">
+        <div>
+          <small class="error"
+            *ngIf="(myForm.get('email').touched || myForm.get('email').dirty) && myForm.get('email').errors?.required || myForm.get('email').errors?.email">Please
+            enter a valid e-mail</small>
+        </div>
+      </div>
+      <div class="input">
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" name="phone" id="phone" placeholder=" (888) 231-9023" formControlName="phone">
+        <div>
+          <small class="error"
+            *ngIf="(myForm.get('phone').touched || myForm.get('phone').dirty) && myForm.get('phone').errors?.required || myForm.get('phone').errors?.pattern || myForm.get('phone').errors?.minlength">Please
+            enter a valid phone number</small>
+        </div>
+      </div>
+      <div class="input">
+        <label for="message">Message</label><br>
+        <textarea rows="5" name="message" id="message" placeholder=" Your Message..." formControlName="message"></textarea>
+        <div>
+          <small class="error"
+            *ngIf="(myForm.get('message').touched || myForm.get('message').dirty) && myForm.get('message').errors?.minlength">Please
+            enter at least 5 characters</small>
+        </div>
+      </div>
+      <button mat-raised-button type="submit" id="submitBut" [disabled]="myForm.invalid" (click)="submit()" routerLink="success">Submit</button>
+    </form>
+  </mat-card>
+</div>
+
+
