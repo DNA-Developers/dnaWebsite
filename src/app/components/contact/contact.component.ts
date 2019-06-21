@@ -32,7 +32,7 @@ export class ContactComponent implements OnInit {
   }
   
   submit(){
-    this.http.post('https://dna-email-sender.herokuapp.com/postDat',{
+    this.http.post('https://dna-email-sender.herokuapp.com/postData',{
       "name": this.myForm.get('name').value,
       "email": this.myForm.get('email').value,
       "message": this.myForm.get('message').value,
