@@ -53,13 +53,14 @@
         text-align: center;
     }
     .showcase-top {
-        height: 90vh;
+        height: 100vh;
     }
     .showcase-top h1{
         font-size: 3rem;
     }
     .text {
         font-size: 1.2rem;
+        justify-content: left;
     }
     .container {
         width: 90%;
