@@ -17,6 +17,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './components/success/success.component';
+import { ErrorComponent } from './components/error/error.component';
 
 
 
@@ -33,7 +34,8 @@ import { SuccessComponent } from './components/success/success.component';
     AboutComponent,
     ContactComponent,
     NotFoundComponent,
-    SuccessComponent
+    SuccessComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

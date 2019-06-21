@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-contact',
@@ -9,9 +12,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit {
   myForm: FormGroup;
+  route = 'success'
   
 
-  constructor(private fb: FormBuilder, private http: HttpClient) { }
+  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
     this.myForm = this.fb.group({
@@ -28,16 +32,30 @@ export class ContactComponent implements OnInit {
   }
   
   submit(){
-    this.http.post('https://dna-email-sender.herokuapp.com/postData',{
+    this.http.post('https://dna-email-sender.herokuapp.com/postDat',{
       "name": this.myForm.get('name').value,
       "email": this.myForm.get('email').value,
       "message": this.myForm.get('message').value,
       "phone": this.myForm.get('phone').value
     }).subscribe( data => {
       console.log('Data successfully sent ', data)
+      this.route = 'success'
+      setTimeout(() => {
+        this.router.navigate([this.route])
+      }
+      , 1000);
+      
     }, error => {
       console.log('Error ', error)
+      this.route = 'error'
+      setTimeout(() => {
+        this.router.navigate([this.route])
+      }
+      , 900);
     });
+
   }
 
 }
+
+
