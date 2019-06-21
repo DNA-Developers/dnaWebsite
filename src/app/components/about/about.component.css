@@ -35,13 +35,7 @@
 .container {
     width: 60rem;
 }
-.social {
-    padding-left: 30rem;
-    font-size: 35px;
-}
-.i {
-    margin-left: 1rem;
-}
+
 @media(max-width: 790px) {
     .main {
         display: flex;
@@ -52,11 +46,20 @@
 }
 
 @media(max-width: 768px) {
-    .main {
+    /* .main {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+    } */
+    .showcase-top {
+        height: 100vh;
+    }
+    .showcase-top h1{
+        font-size: 3rem;
+    }
+    .text {
+        font-size: 1.2rem;
     }
     .container {
         width: 100%;
