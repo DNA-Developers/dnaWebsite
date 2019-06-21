@@ -46,14 +46,14 @@
 }
 
 @media(max-width: 768px) {
-    /* .main {
+    .main {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-    } */
+    }
     .showcase-top {
-        height: 100vh;
+        height: 90vh;
     }
     .showcase-top h1{
         font-size: 3rem;
@@ -62,7 +62,7 @@
         font-size: 1.2rem;
     }
     .container {
-        width: 100%;
+        width: 90%;
     }
 }
     
