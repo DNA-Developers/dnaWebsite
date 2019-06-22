@@ -2,7 +2,7 @@
     height: 40rem !important;
 }
 .showcase-top {
-    background-image: url('/assets/mountain.jpg');
+    background-image: url('../../../assets/optimized_mountains.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -51,9 +51,7 @@
         justify-content: center;
         text-align: center;
     }
-    .showcase-top {
-        
-    }
+    
     .showcase-top h1{
         font-size: 3rem;
     }
