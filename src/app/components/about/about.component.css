@@ -58,6 +58,9 @@
     .text {
         font-size: 1.2rem;
     }
+    #p1 {
+        text-align: left;
+    }
     .container {
         width: 90%;
     }
