@@ -68,8 +68,17 @@ a:hover{
 
 }
 
+
+
 hr{
     background: #ffffff
+}
+
+@media(max-width: 900px){
+    #dropdown{
+        margin-top: 5.5rem;
+
+    }
 }
 
 @media(max-width: 680px){
