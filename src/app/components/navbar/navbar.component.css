@@ -72,7 +72,7 @@ hr{
     background: #ffffff
 }
 
-@media(max-width: 768px){
+@media(max-width: 680px){
     #dropdown{
         margin-top: 6rem;
 
