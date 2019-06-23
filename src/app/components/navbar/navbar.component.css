@@ -76,14 +76,12 @@ hr{
 
 @media(max-width: 900px){
     #dropdown{
-        margin-top: 5rem;
-
+        margin-top: 5.05rem;
     }
 }
 
 @media(max-width: 680px){
     #dropdown{
-        margin-top: 4.75rem;
-
+        margin-top: 4.9rem;
     }
 }
