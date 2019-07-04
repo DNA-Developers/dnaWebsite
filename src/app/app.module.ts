@@ -18,6 +18,8 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './components/success/success.component';
 import { ErrorComponent } from './components/error/error.component';
+import { MissionComponent } from './components/mission/mission.component';
+import { AutoBioComponent } from './components/auto-bio/auto-bio.component';
 
 
 
@@ -35,7 +37,9 @@ import { ErrorComponent } from './components/error/error.component';
     ContactComponent,
     NotFoundComponent,
     SuccessComponent,
-    ErrorComponent
+    ErrorComponent,
+    MissionComponent,
+    AutoBioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,68 +1,73 @@
-.showcase {
-    height: 40rem !important;
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  .container-fluid {
+    width: 100% !important;
+    height: 100vh;
+    overflow: hidden;
 }
-.showcase-top {
-    background-image: url('../../../assets/optimized_mountains.jpg');
+  .parallax { 
+    /* The image used */
+    background-image: url('/assets/rocket.png');
+    /* Set a specific height */
+    height: 100%; 
+    width:100% !important;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    max-width: 100%;
+   
+  }
+  .show {
+      font-display: bold;
+      font-weight: 300;
+      color:white;
+      float: right;
+      padding-top: 18rem;
+  }
+  .container {
+    width: 90rem;
 }
-.showcase-top h1{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: center;
-    padding-top: 19rem;
-    font-size: 72px;
-    text-shadow: 2px 2px 5px blue;
-}
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.icon {
-    font-size: 35px;
-    color: teal;
-}
-.text {
-    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-    color: #006e96;
-}
-.container {
-    width: 60rem;
-}
+  @media (max-width: 790px) {
+    .container-fluid {
+      height: 100vh !important;
+    }
+    .parallax {
+      width: 100% !important;
+      background-attachment: fixed;
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-@media(max-width: 790px) {
-    .main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
-}
-
-@media(max-width: 768px) {
-    .main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+    .show {
+      padding-top: 55%;
+      font-size: .9rem;
     }
-    
-    .showcase-top h1{
-        font-size: 3rem;
+  }
+  @media (max-width: 414px) {
+    .container-fluid{
+      height: 100% !important;
     }
-    .text {
-        font-size: 1.2rem;
-    }
-    #p1 {
-        text-align: left;
+    .parallax{
+      background-image: url('/assets/rocket.png');
+      height: 100% !important;
+      width: 50%;
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
     }
     .container {
-        width: 90%;
+      width: 48%;
+      float: right;
+      padding-top: 45%;
     }
-}
-    
+    h1{
+      font-size: 1.4rem !important;
+    }
+  }

@@ -1,0 +1,49 @@
+.card {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.p1 {
+  width:100%;
+  padding:0;
+  margin: 0;
+  background: #000F16;
+  height: 28rem;
+  border: 2px solid #000000;
+}
+.mission {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:green;
+    font: 300;
+    margin-top: 7rem;
+    width: 50%;
+    margin-left:24%;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 5px 10px;
+  }
+  @media(max-width: 790px) {
+    .mission {
+      width: 100%;
+      width: 90%;
+      margin-left:5%;
+    }
+  }
+  @media(max-width: 414px) {
+
+   .mission {
+     width:80%;
+     height:100%;
+    margin:0 10%;
+   }
+   p {
+     font-size: .9rem;
+     margin: 5px 0;
+   }
+   h2 {
+     font-size: 1.4rem;
+   }
+  }
