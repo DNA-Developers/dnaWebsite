@@ -54,7 +54,7 @@ a:hover{
 
 #dropdown{
     position: absolute;
-    margin-top: 5.9rem;
+    margin-top: 5.2rem;
     width: 100vw;
     background:rgba(0, 0, 0, 0.5);
     height: 100vh;
@@ -68,6 +68,20 @@ a:hover{
 
 }
 
+
+
 hr{
     background: #ffffff
+}
+
+@media(max-width: 900px){
+    #dropdown{
+        margin-top: 5.05rem;
+    }
+}
+
+@media(max-width: 680px){
+    #dropdown{
+        margin-top: 4.9rem;
+    }
 }
