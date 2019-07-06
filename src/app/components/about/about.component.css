@@ -1,73 +1,78 @@
 * {
     font-family: 'Raleway', sans-serif;
-    padding: 0;
-    margin: 0;
+   
   }
   .container-fluid {
     width: 100% !important;
     height: 100vh;
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #000F15;
 }
   .parallax { 
     /* The image used */
     background-image: url('/assets/rocket.png');
     /* Set a specific height */
-    height: 100%; 
-    width:100% !important;
+    height: 100% !important; 
+    
   
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
+    background-attachment: fixed!important;
+    overflow:hidden;
   }
   .show {
       font-display: bold;
       font-weight: 300;
       color:white;
       float: right;
-      padding-top: 18rem;
+      padding-top: 24rem;
+      padding-right: 12rem;
   }
-  .container {
-    width: 90rem;
+@media (max-width:1024px) {
+  .show {
+    padding:0;
+    margin:0;
+    width:100%;
+    text-align:right;
+  }
+  h1 {
+    padding-top: 55%;
+    padding-right: 5%;
+    font-size: 3rem;
+  }
 }
-  @media (max-width: 790px) {
+  @media (max-width: 790px){
     .container-fluid {
-      height: 100vh !important;
-    }
-    .parallax {
-      width: 100% !important;
-      background-attachment: fixed;
-      background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+      height: 105vh !important;
     }
     .show {
+      padding:0;
+      margin:0;
+      width:100%;
+      text-align:right;
+    }
+    
+    h1{
       padding-top: 55%;
-      font-size: .9rem;
+      padding-right: 5%;
+      font-size:2rem;
     }
   }
-  @media (max-width: 414px) {
-    .container-fluid{
-      height: 100% !important;
-    }
-    .parallax{
-      background-image: url('/assets/rocket.png');
-      height: 100% !important;
-      width: 50%;
-      background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin:0;
-    }
-    .container {
-      width: 48%;
-      float: right;
-      padding-top: 45%;
+  @media (max-width: 600px) {
+    .show {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width:100%;
+      text-align:right;
     }
     h1{
-      font-size: 1.4rem !important;
+      padding-top: 73%;
+      padding-right: 5%; 
+      width:100%;
+      font-size: 1.2rem !important;
     }
   }

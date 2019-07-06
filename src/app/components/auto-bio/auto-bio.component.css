@@ -28,17 +28,41 @@ p{
     font-size: 1.2rem;
     margin: 5px 15px;
 }
-@media(max-width:414px) {
+@media(max-width:600px) {
     .main {
+        height: 50rem;
         width:100%;
-        height: 70%;
-        padding-top:0;
-
     }
-    /* .m1 {
-        width: 80%;
-        height: 40% !important;
-        padding-top:2rem;
-    } */
+    .m1 {
+        height: 100% !important;
+        width:90%;
+        margin-left:5%;
+        padding-bottom: 25%;
+    }
+    h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+}
+@media(max-width:790px) {
+    .m1 {
+        height: 100% !important;
+        width:90%;
+        margin-left:5%;
+        padding-bottom: 7%;
+    }
     
+}
+@media(max-width:1024px){
+    .m1 {
+        height: 100% !important;
+        width:90%;
+        margin-left:5%;
+        padding-bottom: 12%;
+    }
+    .p {
+    font-size: 1.4rem;
+    }
 }

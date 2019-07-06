@@ -25,6 +25,12 @@
     font-size: 1.2rem;
     margin: 5px 10px;
   }
+  @media (max-width:1024px) {
+    .mission {
+      width:80%;
+      margin:13% 10%;
+    }
+  }
   @media(max-width: 790px) {
     .mission {
       width: 100%;
@@ -32,15 +38,15 @@
       margin-left:5%;
     }
   }
-  @media(max-width: 414px) {
+  @media(max-width: 600px) {
 
    .mission {
-     width:80%;
+     width:90%;
      height:100%;
-    margin:0 10%;
+    margin:0 5%;
    }
    p {
-     font-size: .9rem;
+     font-size: 1rem;
      margin: 5px 0;
    }
    h2 {
