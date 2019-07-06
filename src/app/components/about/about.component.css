@@ -62,14 +62,6 @@
     }
   }
   @media (max-width: 600px) {
-    .parallax {
-      background-image: url('/assets/small rocket.png');
-      height: 100% !important; 
-      width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
     .show {
       margin: 0;
       padding: 0;
